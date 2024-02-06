@@ -10,8 +10,20 @@
     <div class="container">
         <main>  
             <h1 class="title">Is it a Palindrome?</h1>
-            <div id="palindrome-div">
-                <p id="palindrome-result"></p>
+            <div class="palindrome-div">
+                <label for="text-input">Input text to check for palindrome</label>
+                <input class="palindrome-input" id="text-input" name="text-input">
+                <button class="palindrome-button" id="check-btn">Check</button>
+                <div class="results-div hidden"></div>
+            </div>
+            <div class="palindrome-definitions-div">
+                <p class="palindrome-definitions-div">
+                    <span role="img" aria-label="palindrome">📚</span>
+                    
+                    <dfn>
+                        " A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward as forward, such as "madam" or "eye". "
+                    </dfn>
+                </p>
             </div>
         
         </main>
