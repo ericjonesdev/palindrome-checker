@@ -11,6 +11,7 @@
     --light-grey: #f5f6f7;
     --white: #ffffff;
     --black: #000;
+    --blue: rgb(12, 12, 128);
   }
 
 body {
@@ -38,7 +39,7 @@ h1 {
 
 label {
   color: var(--black);
-  margin-bottom: 22px;
+  margin: 10px 10px;
 }
 
 .palindrome-div {
@@ -53,5 +54,26 @@ label {
   padding: 5px;
   border-radius: 5px;
   box-shadow: 0 5px 5px #08437e
+}
+
+.palindrome-input {
+  width: 250px;
+  height: 30px;
+  margin: 10px;
+  text-align: center;
+  border: none;
+  font-size: 1.3rem;
+  border-bottom: 2px solid var(--blue);
+  color: var(--blue);
+}
+
+.palindrome-button {
+  width: 110px;
+  margin: 10px;
+  border-radius: 15px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px;
+  background: linear-gradient(rgb(25, 102, 235), rgb(55, 37, 118));
 }
 
