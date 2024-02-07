@@ -19,12 +19,39 @@ body {
     color: #ffffff;
 }
 
-.container {
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-inline-start: 0.67em;
+  margin-inline-end: 0.67em;
 }
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+label {
+  color: var(--black);
+  margin-bottom: 22px;
+}
+
+.palindrome-div {
+  display: flex;
+  width: min(100vw, 450px);
+  min-height: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px #08437e
+}
+
