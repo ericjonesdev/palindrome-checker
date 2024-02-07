@@ -51,8 +51,8 @@ label {
   background-color: var(--white);
   flex-wrap: wrap;
   margin: 10px;
-  padding: 5px;
-  border-radius: 5px;
+  padding: 20px;
+  border-radius: 25px;
   box-shadow: 0 5px 5px #08437e
 }
 
@@ -77,3 +77,28 @@ label {
   background: linear-gradient(rgb(25, 102, 235), rgb(55, 37, 118));
 }
 
+.hidden {
+  display: none;
+}
+
+.results-div {
+  overflow-y: auto;
+  word-wrap: break-word;
+  min-height: 50px;
+  color: black;
+}
+
+.palindrome-definitions-div {
+  display: flex;
+  width: min(100vw, 450px);
+  min-height: 100px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(171, 180, 8), rgb(240, 202, 16));
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 25px;
+  color:#000;
+  box-shadow: 0 5px 5px #08437e
+}
