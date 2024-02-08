@@ -1,12 +1,28 @@
 const userDataInput = document.getElementById('text-input');
-const checkButton = document.getElementById('check-btn');
+const checkPalindromeBtn = document.getElementById('check-btn');
 const palResult = document.getElementById('result');
 
+const checkForPalindrome = input => {
+    const originalInput = input; // store variable for future use
+
+    if (input === '') {
+        alert('Please input a value');
+    }
+}
+
+
+
+
+
+
+
+
+
 // add event listener for checkButton
-checkButton.addEventListener('click', () => {
+checkPalindromeBtn.addEventListener('click', () => {
     checkForPalindrome(userDataInput.value);
     userDataInput.value = '';
-})
+});
 
 // add event listener for userDataInput
 
@@ -16,4 +32,4 @@ userDataInput.addEventListener( e => {
         userDataInput.value = '';
     }
 
-})
+});
