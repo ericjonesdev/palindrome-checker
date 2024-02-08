@@ -1,13 +1,21 @@
+// Declare element variables
 const userDataInput = document.getElementById('text-input');
 const checkPalindromeBtn = document.getElementById('check-btn');
-const palResult = document.getElementById('result');
+const palResultDiv = document.getElementById('result');
 
 const checkForPalindrome = input => {
     const originalInput = input; // store variable for future use
 
+    // ensure that userDataInput is not blank
     if (input === '') {
         alert('Please input a value');
+        return;
     }
+
+    // remove previous result
+    palResultDiv.removeChild();
+
+
 }
 
 
