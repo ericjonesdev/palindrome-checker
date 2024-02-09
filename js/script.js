@@ -13,17 +13,25 @@ const checkForPalindrome = input => {
     }
 
     // remove previous result
-    palResultDiv.removeChild();
+    palResultDiv.replaceChildren();
 
+    // check if the input word is equal in both directions after removing non-alphanumeric characters
+    const inputLowerCase = input.replace(/[^A-Za-z1-9]/gi, '').toLowerCase();
+    let resultMsg = `<strong>${originalInput}</strong> ${inputLowerCase === [...inputLowerCase].reverse().join('') ? 'is' : 'is not'}
+    a palindrome.'`;
 
-}
+    // output the result to the result div area
 
+    const paraGraph = document.createElement("p");
+    paraGraph.className = userDataInput;
+    paraGraph.innerText = resultMsg;
+    palResultDiv.appendChild(paraGraph);
 
+    // show result message by unhiding hidden element
 
+    palResultDiv.classList.remove('hidden');
 
-
-
-
+};
 
 
 // add event listener for checkButton
@@ -34,8 +42,8 @@ checkPalindromeBtn.addEventListener('click', () => {
 
 // add event listener for userDataInput
 
-userDataInput.addEventListener( e => {
-    if (e.key === 'ENTER') {
+userDataInput.addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
         checkForPalindrome(userDataInput.value);
         userDataInput.value = '';
     }
