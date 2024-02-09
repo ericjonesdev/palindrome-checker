@@ -112,3 +112,12 @@ label {
   color:#000;
   box-shadow: 0 5px 5px #08437e
 }
+
+@media screen and (max-width: 800px ) {
+  h1 {
+    color:rgb(49, 167, 5);
+    margin: 20px;
+    padding: 20px;
+  }
+  
+}
