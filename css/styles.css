@@ -77,6 +77,16 @@ label {
   background: linear-gradient(rgb(25, 102, 235), rgb(55, 37, 118));
 }
 
+.reset-button {
+  width: 110px;
+  margin: 10px;
+  border-radius: 15px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px;
+  background: linear-gradient(rgb(49, 167, 5), rgb(18, 66, 5));
+}
+
 .hidden {
   display: none;
 }
