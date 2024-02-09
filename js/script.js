@@ -35,8 +35,9 @@ const checkForPalindrome = input => {
 };
 
 function resetGame() {
-    if (resetBtn === 'click') {
+    if (resetBtn) {
         palResultDiv.classList.add('hidden');
+        resetBtn.classList.add('hidden');
     }
 }
 
