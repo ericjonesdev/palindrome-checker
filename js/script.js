@@ -18,13 +18,13 @@ const checkForPalindrome = input => {
 
     // check if the input word is equal in both directions after removing non-alphanumeric characters
     const inputLowerCase = input.replace(/[^A-Za-z1-9]/gi, '').toLowerCase();
-    let resultMsg = `<strong>${originalInput}</strong> ${inputLowerCase === [...inputLowerCase].reverse().join('') ? 'is' : 'is not'} a palindrome.'`;
+    let resultMsg = `<strong>${originalInput}</strong> ${inputLowerCase === [...inputLowerCase].reverse().join('') ? 'is' : 'is not'} a palindrome.`;
+
 
     // output the result to the result div area
-
     const paraGraph = document.createElement("p");
     paraGraph.className = userDataInput;
-    paraGraph.innerText = resultMsg;
+    paraGraph.innerHTML = resultMsg;
     palResultDiv.appendChild(paraGraph);
 
     // show result message by unhiding hidden element

@@ -78,6 +78,7 @@ label {
 }
 
 .reset-button {
+  display:block;
   width: 110px;
   margin: 10px;
   border-radius: 15px;
