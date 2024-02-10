@@ -1,4 +1,6 @@
-# Is it a palindrome? Online checker app
+# Is it a palindrome? Check Online
+
+A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward as forward, such as "madam" or "eye". This mini-project lets you input your word or phrase and run it against the app to see if your input is indeed a palindrome.
 
 This project was inspired by the FreeCodeCamp javaScript 'Build a Palindrome Checker Project': 
 [text](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/#build-a-palindrome-checker-project)
