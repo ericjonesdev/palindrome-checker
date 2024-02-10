@@ -6,7 +6,7 @@ This project was inspired by the FreeCodeCamp javaScript ['Build a Palindrome Ch
 
 Visit the live site [here:](https://ericjonesdev.github.io/palindrome-checker/)
 
-## Additions to site:
+## Additions and improvements to the original site specifications:
 -   Added Reset Button to retart game and clear last result message
 -   Added resetGame function to accomplish reset of game
 -   Added media query to edit the look of the h1 header on varying screen sizes
